@@ -20,7 +20,7 @@ RUN \
 #
 # EXAMPLE:
 #   ETHERPAD_PLUGINS="ep_codepad ep_author_neat"
-ARG ETHERPAD_PLUGINS=
+ARG ETHERPAD_PLUGINS="ep_image_upload ep_font_size ep_font_family ep_font_color ep_delete_empty_pads ep_adminpads2 ep_delete_after_delay"
 
 # Control whether abiword will be installed, enabling exports to DOC/PDF/ODT formats.
 # By default, it is not installed.
@@ -28,7 +28,7 @@ ARG ETHERPAD_PLUGINS=
 #
 # EXAMPLE:
 #   INSTALL_ABIWORD=true
-ARG INSTALL_ABIWORD=
+ARG INSTALL_ABIWORD=true
 
 # Control whether libreoffice will be installed, enabling exports to DOC/PDF/ODT formats.
 # By default, it is not installed.
@@ -36,12 +36,16 @@ ARG INSTALL_ABIWORD=
 #
 # EXAMPLE:
 #   INSTALL_LIBREOFFICE=true
-ARG INSTALL_SOFFICE=
+ARG INSTALL_SOFFICE=true
 
 # By default, Etherpad container is built and run in "production" mode. This is
 # leaner (development dependencies are not installed) and runs faster (among
 # other things, assets are minified & compressed).
 ENV NODE_ENV=production
+
+# DB_TYPE
+# sqlite
+ENV DB_TYPE=sqlite
 
 # Follow the principle of least privilege: run as unprivileged user.
 #
