@@ -634,5 +634,19 @@
   "customLocaleStrings": {},
 
   /* Disable Admin UI tests */
-  "enableAdminUITests": false
+  "enableAdminUITests": false,
+  
+  "ep_image_upload": {
+    "fileTypes": ["jpeg", "jpg", "bmp", "gif", "png"],
+    "maxFileSize": 10000000
+   },
+   
+   "ep_delete_after_delay": {
+    "delay": 604800, // a week, in seconds
+    "loop": true,
+    "loopDelay": 3600, // one hour, in seconds
+    "deleteAtStart": true,
+    "text": "The content of this pad has been deleted since it was older than the configured delay."
+    }
+  
 }
