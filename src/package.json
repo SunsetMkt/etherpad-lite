@@ -86,7 +86,7 @@
     "nodeify": "^1.0.1",
     "openapi-schema-validation": "^0.4.2",
     "selenium-webdriver": "^4.1.1",
-    "set-cookie-parser": "^2.4.8",
+    "set-cookie-parser": "^2.5.1",
     "sinon": "^13.0.2",
     "split-grid": "^1.0.11",
     "supertest": "^6.1.6",
