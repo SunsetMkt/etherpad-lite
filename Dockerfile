@@ -45,7 +45,7 @@ ENV NODE_ENV=production
 
 # DB_TYPE
 # sqlite
-ENV DB_TYPE=sqlite
+# ENV DB_TYPE=sqlite
 
 # Follow the principle of least privilege: run as unprivileged user.
 #
